@@ -20,12 +20,10 @@ public class MainActivity extends AppCompatActivity {
     /** called when the start button is  clicked */
     public void startQuiz(View view){
         Intent intent = new Intent(this, question.class);
-        Button answer1 = (Button) findViewById(R.id.start);
         Bundle bundle =new Bundle();
         intent.putExtra(EXTRA_MESSAGE, "");
         startActivity(intent);
         intent.putExtras(bundle);
-
 
     }
     public void setQuit(View view) {
